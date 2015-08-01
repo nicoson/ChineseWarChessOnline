@@ -129,7 +129,10 @@
 			<!-- <div class="chessman"><div>帥</div></div> -->
 		</div>
 
-		<button class="btn btn-success restart">restart</button>
+		<button class="btn btn-primary join">Join</button>
+		<button class="btn btn-success start" disabled="disabled">Start</button>
+		<button class="btn btn-warning surrender" disabled="disabled">GG</button>
+		<button class="btn btn-default cancel" disabled="disabled">cancel</button>
 		<div class="start"></div>
 		<div class="gameOver">
 			<div>
@@ -139,7 +142,13 @@
 		</div>
 	</div>
 	
-	<script src="javascripts/action.js"></script>
-	<script src="javascripts/core.js"></script>
+	<script src="javascripts/chessObj.js"></script>
+	<script src="javascripts/chessCtr.js"></script>
+	<script src="javascripts/global.js"></script>
+	<script src="javascripts/communication.js"></script>
+
+	<script>
+		var data = <%= data %>;
+	</script>
 
 <% include footer.ejs %>

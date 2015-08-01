@@ -11,10 +11,32 @@
 	margin: 0 auto;
 }
 
-#chessboard>button{
+#chessboard .start{
+	position: absolute;
+	right: 10px;
+	top: 40%;
+	width: 70px;
+}
+
+#chessboard .join{
+	position: absolute;
+	right: 10px;
+	top: 30%;
+	width: 70px;
+}
+
+#chessboard .surrender{
 	position: absolute;
 	right: 10px;
 	top: 50%;
+	width: 70px;
+}
+
+#chessboard .cancel{
+	position: absolute;
+	right: 10px;
+	top: 60%;
+	width: 70px;
 }
 
 #chessboard>div.gameOver{
