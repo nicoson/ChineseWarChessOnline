@@ -1,0 +1,72 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.nav-left, .nav-right{
+	position: fixed;
+	width: 300px;
+	height: 99%;
+	box-shadow: 5px 5px 5px #666;
+	z-index: 10;
+	padding: 10px 30px;
+	text-align: center;
+	font-family: Geneva, sans-serif;
+	background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
+	border: 3px outset hsl(210, 30%, 0%);
+}
+
+.nav-right{
+	right: 0;
+	box-shadow: -5px 5px 5px #666;
+	padding: 30px;
+	color: white;
+}
+
+.nav-left>h2{
+	color: rgba(255,255,255,0.5);
+	text-shadow: 0 0 10px #fff,
+	0 0 20px #fff,
+	0 0 30px #fff,
+	0 0 40px #ff00de,
+	0 0 70px #ff00de,
+	0 0 80px #ff00de,
+	0 0 100px #ff00de,
+	0 0 150px #ff00de;
+}
+
+.nav-left>div{
+	width: 90%;
+	height: 80%;
+	margin: 30px auto;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	border: 3px inset hsl(210, 30%, 20%);
+	padding: 30px;
+	overflow: auto;
+}
+
+.nav-left summary{
+	text-align: left;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+details>a{
+	color: hsl(210, 30%, 0%);
+}
+
+.nav-right img{
+	width: 80px;
+}
+
+.nav-right table{
+	border: 1px solid white;
+}

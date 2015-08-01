@@ -1,0 +1,204 @@
+#chessboard{
+	background: #d2bf9b;
+	padding: 50px;
+	width: 700px;
+	position: relative;
+}
+
+#chessboard>div{
+	width: 481px; /* =60*8 */
+	position: relative;
+	margin: 0 auto;
+}
+
+#chessboard>button{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+}
+
+#chessboard>div.gameOver{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: none;
+}
+
+#chessboard>div.gameOver>div{
+	position: absolute;
+	padding: 10px;
+	text-align: center;
+	left: -150px;
+	top: -50px;
+	width: 300px;
+	height: 120px;
+	background: white;
+	border-radius: 5px;
+}
+
+#chessboard>div.gameOver>div>button{
+	margin: 0 auto;
+}
+
+#boardPaint{
+	outline: 5px solid black;
+	outline-offset: 5px;
+}
+
+#boardPaint td{
+	width: 60px;
+	height: 60px;
+	border: 1px solid black;
+	position: relative;
+}
+
+#boardPaint tr:nth-child(5) td:first-child{
+	border-right: 0;
+}
+
+#boardPaint tr:nth-child(5) td:last-child{
+	border-left: 0;
+}
+
+#boardPaint tr:nth-child(5) td:nth-child(2),
+#boardPaint tr:nth-child(5) td:nth-child(3),
+#boardPaint tr:nth-child(5) td:nth-child(4){
+	text-align: center;
+	border: 0;
+	font-size: 25px;
+	font-family: STXinwei;
+}
+
+.left{
+	background: -webkit-repeating-linear-gradient(left bottom, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: -o-repeating-linear-gradient(left bottom, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: -moz-repeating-linear-gradient(left bottom, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: repeating-linear-gradient(left bottom, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+}
+
+.right{
+	background: -webkit-repeating-linear-gradient(left top, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: -o-repeating-linear-gradient(left top, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: -moz-repeating-linear-gradient(left top, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+	background: repeating-linear-gradient(left top, #d2bf9b, #d2bf9b 49.5%, black 50%, #d2bf9b 50.5%, #d2bf9b 100%);
+}
+
+#boardPaint td>div.rightBottom{
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+}
+
+#boardPaint td>div.leftBottom{
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+}
+
+#boardPaint td>div.leftTop{
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+
+#boardPaint td>div.rightTop{
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+
+.chessman{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #c0915d;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.chessmanInnerRed{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid red;
+	text-align: center;
+	font-size: 25px;
+	color: red;
+}
+
+.chessmanInnerBlack{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+
+#chessGrid{
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 541px;
+}
+
+#chessGrid td{
+	width: 60px;
+	height: 60px;
+/*	border: 1px solid green;*/
+	position: relative;
+	padding: 4px;
+}
+
+#chessGrid td:hover{
+	background: rgba(255,0,0,0.5);
+	-webkit-animation: pathBlock 1s infinite;
+	animation: path 1s infinite;
+}
+
+.chessPath{
+	background: rgba(0,255,0,0.5);
+	-webkit-animation: path 1s infinite;
+	animation: path 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes path{
+    from {background: rgba(0,255,0,0.5);}
+    to {background: rgba(0,255,0,0.2);}
+}
+
+/* Standard syntax */
+@keyframes path{
+    from {background: rgba(0,255,0,0.5);}
+    to {background: rgba(0,255,0,0.2);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pathBlock{
+    from {background: rgba(255,0,0,0.5);}
+    to {background: rgba(255,0,0,0.2);}
+}
+
+/* Standard syntax */
+@keyframes pathBlock{
+    from {background: rgba(255,0,0,0.5);}
+    to {background: rgba(255,0,0,0.2);}
+}

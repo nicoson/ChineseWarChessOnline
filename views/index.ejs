@@ -1,0 +1,145 @@
+<% include header.ejs %>
+
+	<div id="chessboard" class="container">
+		<div>
+			<table id="boardPaint">
+				<tbody>
+					<tr>
+						<td></td><td></td><td></td><td class="left"></td>
+						<td class="right"></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td></td>
+						<td class="right"></td>
+						<td class="left"></td>
+						<td></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+					</tr>
+					<tr>
+						<td><div class="leftBottom"></div><div class="rightTop"></div></td>
+						<td><div class="rightBottom"></div><div class="leftTop"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div><div class="rightTop"></div></td>
+						<td><div class="rightBottom"></div><div class="leftTop"></div></td>
+					</tr>
+					<tr>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td colspan="2">楚河</td>
+						<td colspan="2"></td>
+						<td colspan="2">漢界</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+						<td><div class="leftBottom"></div></td>
+						<td><div class="rightBottom"></div></td>
+					</tr>
+					<tr>
+						<td><div class="rightBottom"></div><div class="leftTop"></div></td>
+						<td><div class="leftBottom"></div><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="rightBottom"></div><div class="leftTop"></div></td>
+						<td><div class="leftBottom"></div><div class="rightTop"></div></td>
+					</tr>
+					<tr>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+						<td></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td></td>
+						<td><div class="rightTop"></div></td>
+						<td><div class="leftTop"></div></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td class="right"></td>
+						<td class="left"></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table id="chessGrid">
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+					<td></td><td></td><td></td><td></td>
+				</tr>
+			</table>
+			<!-- <div class="chessman"><div>帥</div></div> -->
+		</div>
+
+		<button class="btn btn-success restart">restart</button>
+		<div class="start"></div>
+		<div class="gameOver">
+			<div>
+				<h3></h3>
+				<button class="btn btn-success restart">restart</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="javascripts/action.js"></script>
+	<script src="javascripts/core.js"></script>
+
+<% include footer.ejs %>

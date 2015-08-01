@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chinese War Chess</title>
+
+	<!-- css library -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/chess.css">
+	
+	<!-- framework & library -->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.3.14/angular-route.min.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+</head>
+<body>
+	<div class="nav-left">
+		<h2>Game Center</h2>
+		<div>
+			<details>
+				<summary>象棋</summary>
+				<a href="CWCRoom1"><p>房间1</p></a>
+				<a href="CWCRoom2"><p>房间2</p></a>
+				<a href="CWCRoom3"><p>房间3</p></a>
+				<a href="CWCRoom4"><p>房间4</p></a>
+				<a href="CWCRoom5"><p>房间5</p></a>
+				<a href="CWCRoom6"><p>房间6</p></a>
+				<a href="CWCRoom7"><p>房间7</p></a>
+				<a href="CWCRoom8"><p>房间8</p></a>
+			</details>
+			<details>
+				<summary>围棋</summary>
+				<a href="WQRoom1"><p>房间1</p></a>
+				<a href="WQRoom2"><p>房间2</p></a>
+				<a href="WQRoom3"><p>房间3</p></a>
+				<a href="WQRoom4"><p>房间4</p></a>
+				<a href="WQRoom5"><p>房间5</p></a>
+				<a href="WQRoom6"><p>房间6</p></a>
+				<a href="WQRoom7"><p>房间7</p></a>
+				<a href="WQRoom8"><p>房间8</p></a>
+			</details>
+		</div>
+	</div>
+
+	<div class="nav-right">
+		<table>
+			<tr>
+				<td>
+					<img src="images/logo.jpg" alt="" />
+				</td>
+				<td>
+					user name
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	<div class="container-fluid">
